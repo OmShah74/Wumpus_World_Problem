@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Fallback color if background image fails */
+    background-image: url('../assets/background.jpg'); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center; /* Center the background */
+    color: white;
+}
+
+nav {
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent for better visibility */
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a, nav button {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Consistent font size */
+}
+
+.game-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 28px; /* Adjust heading size */
+}
+
+button {
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    background-color: rgba(0, 122, 204, 0.8); /* Button color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(0, 102, 204, 1); /* Darker on hover */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 20px auto;
+    width: 80%;
+    opacity: 0.9; /* Slightly transparent for better visibility */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-image: url('../assets/terrain.png'); /* Normal tile image */
+    background-size: cover;
+    border: 1px solid #333; /* Cell border */
+    position: relative;
+}
+
+.agent {
+    background-size: cover;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 20px;
+}
